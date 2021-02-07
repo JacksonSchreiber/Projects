@@ -1,0 +1,8 @@
+Contribute
+1.  git add FILE
+2.  git commit -s -m "Summary"
+Reviewing changes
+1.  git log     //list of changes (-p for more)
+2.  git diff    //review changes
+Share (push)
+1. git push
