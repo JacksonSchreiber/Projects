@@ -1,0 +1,25 @@
+printf() formatting: %[argument_index$][flags][width][.precision]f
+    Precision - number of digits after decimal (or how many chars to show in string)
+        double num = 12.3314244;
+        printf("%.0f\n", num);  12
+
+
+        printf("%.2s\n", "hello");  he
+
+    Width - spaces before/after variable. goes right by default
+        printf("%8d\n", 123);   _____123
+        printf("%4d%5d\n", 123, 456);   _123__456  (9 spaces total)
+
+    Flags
+        - (minus) left justifies width
+        + (plus)  puts a + before positive numbers (line up positive w/ neg numbers better)
+            printf("%+d\n", 123);   +123
+            printf("%+d\n", -123);  -123
+        space     exact same as + flag but its a space instead
+
+        0 (zero)  adds leading 0s. must specify width
+            printf("%06d\n", -123);  -00123
+
+        , (comma) adds commas to big numbers (1,000,000)
+
+        # (pound) alternate form. adds 0x to hex and leading 0s for octal
